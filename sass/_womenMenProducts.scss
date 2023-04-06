@@ -1,0 +1,25 @@
+.sectionRopa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5vh;
+    p{
+        text-align: center;
+        font-family:"Phudu", cursive; ;
+    }
+    .botonCompra {
+        font-weight:bold;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+
+

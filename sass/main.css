@@ -4,10 +4,152 @@
   color: white;
 }
 
+.sectionRopa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5vh;
+}
+.sectionRopa p {
+  text-align: center;
+  font-family: "Phudu", cursive;
+}
+.sectionRopa .botonCompra {
+  font-weight: bold;
+  text-align: center;
+}
+.sectionRopa a {
+  text-decoration: none;
+}
+.sectionRopa a img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .headerHome {
+    display: none;
+  }
+  .sectionHome {
+    margin-top: 14vh;
+  }
+  .nav__mobile {
+    background-color: black !important;
+  }
+  .nav__mobile nav {
+    background-color: black !important;
+  }
+  .nav__mobile .navbar-brand {
+    font-family: "Phudu", cursive !important;
+    font-size: xx-large !important;
+    margin-left: 35vh !important;
+  }
+}
+.sectionRopa {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
 .bodyHome {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .headerHome .headerHome__login .nav1 ul {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.headerHome .headerHome__login .nav1 ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+}
+.headerHome .headerHome__login .nav1 ul li:hover {
+  background-color: white;
+}
+.headerHome .headerHome__login .nav1 ul li a {
+  text-decoration: none;
+  font-family: "Phudu", cursive;
+}
+.headerHome .headerHome__login .nav1 ul li a:hover {
+  color: black !important;
+  font-size: medium;
+}
+.headerHome .headerHome__login .nav1 ul li a .bi-person-fill:hover {
+  color: black;
+}
+.headerHome .headerHome__login .nav1 ul li a .bi-bag:hover {
+  color: black;
+}
+.headerHome .headerHome__nav h1 {
+  font-family: "Phudu", cursive;
+  font-size: 7vh;
+  position: absolute;
+  top: 10px;
+  margin-left: 45%;
+}
+.headerHome .headerHome__nav #nav2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0);
+}
+.headerHome .headerHome__nav #nav2 ul li {
+  width: 100%;
+  list-style: none;
+  margin: 25px;
+  padding: 10px;
+  text-align: center;
+}
+.headerHome .headerHome__nav #nav2 ul li:hover {
+  background-color: white;
+}
+.headerHome .headerHome__nav #nav2 ul li a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Phudu", cursive;
+}
+.headerHome .headerHome__nav #nav2 ul li a:hover {
+  color: black !important;
+  font-size: large;
+}
+
+.sectionHome {
+  margin-bottom: 50px;
+}
+.sectionHome div a img {
+  width: 100%;
+  height: auto;
+}
+
+.footerHome .div__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footerHome .div__footer .div__footer1 nav h4 {
+  text-align: start;
+  font-size: medium;
+  font-family: "Phudu", cursive;
+  margin: 10px;
+}
+.footerHome .div__footer .div__footer1 nav ul li {
+  list-style: none;
+}
+.footerHome .div__footer .div__footer1 nav ul li a {
+  text-decoration: none;
+}
+.footerHome .div__footer .div__footer2 nav h4 {
+  text-align: start;
+  font-size: medium;
+  font-family: "Phudu", cursive;
+  margin: 10px;
+}
+.footerHome .div__footer .div__footer2 nav ul li {
+  list-style: none;
+}
+.footerHome .div__footer .div__footer2 nav ul li a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

@@ -2,10 +2,44 @@
     margin: 0;
     padding: 0;
     color: white;
+    
 }
 
+$space-around-marign:25px;
+@import "womenMenProducts";
+
+@media (min-width: 320px ) and (max-width:768px){
+.headerHome{
+    display: none;
+}
+.sectionHome{
+    margin-top: 14vh;
+   
+}
+.nav__mobile{
+    nav{
+        background-color: black !important;
+    }
+        background-color: black !important;
+        .navbar-brand {
+            font-family: "Phudu", cursive !important;
+            font-size: xx-large !important;
+            margin-left: 35vh !important;
+        }
+    }
+}
+.sectionRopa{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 10px;
+}
+    
+
+
 .bodyHome{
-   background-color: black;
+   background-color: rgb(0, 0, 0);
+   
 
 }
  .headerHome {
@@ -13,7 +47,134 @@
         .nav1 { 
             ul {
                 display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                li{
+                    list-style: none;
+                    padding: 10px;
+                    margin: 5px;
+                    &:hover {
+                        background-color: white;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-family:'Phudu', cursive;
+                       &:hover{
+                        color: black !important;
+                        font-size: medium;
+                       }
+                       .bi-person-fill:hover{
+                        color: black;
+                       }
+                        .bi-bag:hover {
+                            color: black;
+                           }
+
+                    }
+                }
             }
         }
     }
+
+    .headerHome__nav {
+        h1 {
+            font-family:'Phudu', cursive;
+            font-size: 7vh;
+            position: absolute;
+            top: 10px;
+            margin-left: 45%;
+        }
+        #nav2{
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: rgb(0, 0, 0);
+                li{
+                    width: 100%;
+                    list-style: none;
+                    margin: $space-around-marign;
+                    padding: 10px;
+                    text-align: center;
+                    &:hover{
+                        background-color: white;
+                
+                    }
+                    
+                    a{
+                        padding: 10px;
+                        text-decoration: none;
+                        font-family: 'Phudu', cursive;
+                        &:hover {
+                            color: black !important;
+                            font-size: large;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+ }
+ .sectionHome {
+    margin-bottom: 50px;
+    div{
+        a{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+ }
+
+ .footerHome {
+    .div__footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .div__footer1{
+            nav{
+                h4 {
+                text-align: start;
+                font-size: medium;
+                font-family:'Phudu', cursive;
+                margin: 10px;
+                }
+                ul {
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        
+        }
+         .div__footer2 {
+            nav{
+                 h4{
+                 text-align: start;
+                font-size: medium;
+                font-family:'Phudu', cursive;
+                margin: 10px;
+                
+                 } 
+                 ul{
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                 }
+             }
+       
+        
+         }
+     }
  }
