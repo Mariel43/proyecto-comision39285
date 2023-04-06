@@ -24,11 +24,11 @@ $space-around-marign:25px;
         .navbar-brand {
             font-family: "Phudu", cursive !important;
             font-size: xx-large !important;
-            margin-left: 35vh !important;
         }
     }
 }
 .sectionRopa{
+    margin-top: 16vh;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(6,1fr);
