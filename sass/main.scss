@@ -9,6 +9,11 @@ $space-around-marign:25px;
 @import "womenMenProducts";
 
 @media (min-width: 320px ) and (max-width:768px){
+
+    .bodyHome{
+        background-color: black;
+        color: white;
+    }
 .headerHome{
     display: none;
 }
@@ -19,12 +24,12 @@ $space-around-marign:25px;
 .nav__mobile{
     nav{
         background-color: black !important;
-    }
-        background-color: black !important;
+
         .navbar-brand {
+            background-color: black !important;
             font-family: "Phudu", cursive !important;
-            font-size: xx-large !important;
-        }
+            }
+        
     }
 }
 .sectionRopa{
@@ -34,13 +39,103 @@ $space-around-marign:25px;
     grid-template-rows: repeat(6,1fr);
     gap: 10px;
 }
-    
+.footerHome{
+    .div__footer{
 
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+
+    
+    nav{
+        h4{
+            text-align: center;
+            font-family: "Phudu", cursive;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        ul{
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+          }
+        }
+      }
+
+@media (min-width: 768px ) and (max-width:1024px) {
+    .bodyHome{
+        background-color: black;
+        color: white;
+    }
+    .headerHome{
+        display: none;
+    }
+    .sectionHome{
+        margin-top: 14vh;
+       
+    }
+    .nav__mobile{
+        nav{
+            background-color: black !important;
+
+            .navbar-brand {
+             
+                background-color: black !important;
+                font-family: "Phudu", cursive !important;
+                }
+            
+        }
+    }
+    .sectionRopa{
+        margin-top: 16vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+    }
+    .footerHome{
+        .div__footer{
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         nav{
+            h4{
+                text-align: center;
+                margin: 2px;
+                padding: 5px;
+
+            }
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+         }
+    
+        }
+
+}
+    
+@media (min-width: 1024px ) and (max-width:2000px) {
+    
+ .nav__mobile{
+        display: none;
+    }
 
 .bodyHome{
    background-color: rgb(0, 0, 0);
-   
-
+   color: white;
 }
  .headerHome {
     .headerHome__login {
@@ -131,6 +226,7 @@ $space-around-marign:25px;
  }
 
  .footerHome {
+
     .div__footer{
         display: flex;
         align-items: center;
@@ -177,4 +273,14 @@ $space-around-marign:25px;
         
          }
      }
+ }
+ 
+
+ }
+
+  }
+
+}
+
+
  }
