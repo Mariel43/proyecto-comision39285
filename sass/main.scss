@@ -1,20 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
-    
+    color:white; 
+
 }
 
-$space-around-marign:25px;
+.bodyHome{
+    background-color: black;
+}
+
+$space-around-margin:25px;
 @import "womenMenProducts";
+//Como //
 
-@media (min-width: 320px ) and (max-width:768px){
+@media (max-width:720px){
 
-    .bodyHome{
-        background-color: black;
-        color: white;
-    }
-.headerHome{
+   
+.headerHome {
     display: none;
 }
 .sectionHome{
@@ -22,89 +24,107 @@ $space-around-marign:25px;
    
 }
 .nav__mobile{
-    nav{
-        background-color: black !important;
 
-        .navbar-brand {
-            background-color: black !important;
-            font-family: "Phudu", cursive !important;
-            }
+    nav{
+           background-color: black !important;
+            font-family: "Phudu", cursive !important; 
+        }
+
+        
         
     }
-}
-.sectionRopa{
-    margin-top: 16vh;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,1fr);
-    gap: 10px;
-}
-.footerHome{
-    .div__footer{
+        div{
+            .offcanvas {
+                background-color: black !important;
+            }
+        }
 
-     display: flex;
-     flex-wrap: nowrap;
-     justify-content: center;
-     align-items: center;
+        .sectionRopa{
+         margin-top: 16vh;
+         display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            gap: 10px;
+        
+    }
+   
+      
+    .footerHome{
+        background-image: linear-gradient(to top,#270606 0%,#000000 100% );
+        .div__footer{
+
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;
+         margin-top: 20vh;
+         margin-bottom: 5vh;
 
     
-    nav{
-        h4{
-            text-align: center;
-            font-family: "Phudu", cursive;
-            margin: 5px;
-            padding: 5px;
-        }
+             nav{
+                 h4{
+                     text-align: center;
+                     font-family: "Phudu", cursive;
+                     margin: 5px;
+                     padding: 5px;
+                    }
 
-        ul{
-            li{
-                list-style: none;
+                 ul{
+                     li{
+                         list-style: none;
 
-                a{
-                    text-decoration: none;
+                        a{
+                         text-decoration: none;
+                        }
+                     }
                 }
-            }
-          }
+             }
         }
-      }
-
-@media (min-width: 768px ) and (max-width:1024px) {
-    .bodyHome{
-        background-color: black;
-        color: white;
     }
+
+}
+
+@media (min-width:721px)and (max-width:1024px) {
+
     .headerHome{
         display: none;
     }
-    .sectionHome{
-        margin-top: 14vh;
-       
-    }
     .nav__mobile{
-        nav{
-            background-color: black !important;
 
-            .navbar-brand {
-             
-                background-color: black !important;
-                font-family: "Phudu", cursive !important;
-                }
+        nav{
+               background-color: black !important;
+                font-family: "Phudu", cursive !important; 
+            }
+    
+            
             
         }
+        div{
+            .offcanvas {
+                background-color: black !important;
+            }
+        }
+    .sectionHome{
+        margin-top: 10vh;
+       
     }
     .sectionRopa{
         margin-top: 16vh;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
         gap: 10px;
     }
     .footerHome{
+        background-image: linear-gradient(to top,#270606 0%,#000000 100% );
+
         .div__footer{
 
          display: flex;
          justify-content: center;
          align-items: center;
+         margin-top: 20vh;
+         margin-bottom: 5vh;
          
          nav{
             h4{
@@ -125,162 +145,7 @@ $space-around-marign:25px;
     
         }
 
-}
-    
-@media (min-width: 1024px ) and (max-width:2000px) {
-    
- .nav__mobile{
-        display: none;
     }
 
-.bodyHome{
-   background-color: rgb(0, 0, 0);
-   color: white;
-}
- .headerHome {
-    .headerHome__login {
-        .nav1 { 
-            ul {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-
-                li{
-                    list-style: none;
-                    padding: 10px;
-                    margin: 5px;
-                    &:hover {
-                        background-color: white;
-                    }
-                    a {
-                        text-decoration: none;
-                        font-family:'Phudu', cursive;
-                       &:hover{
-                        color: black !important;
-                        font-size: medium;
-                       }
-                       .bi-person-fill:hover{
-                        color: black;
-                       }
-                        .bi-bag:hover {
-                            color: black;
-                           }
-
-                    }
-                }
-            }
-        }
-    }
-
-    .headerHome__nav {
-        h1 {
-            font-family:'Phudu', cursive;
-            font-size: 7vh;
-            position: absolute;
-            top: 10px;
-            margin-left: 45%;
-        }
-        #nav2{
-            ul {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                background-color: rgb(0, 0, 0);
-                li{
-                    width: 100%;
-                    list-style: none;
-                    margin: $space-around-marign;
-                    padding: 10px;
-                    text-align: center;
-                    &:hover{
-                        background-color: white;
-                
-                    }
-                    
-                    a{
-                        padding: 10px;
-                        text-decoration: none;
-                        font-family: 'Phudu', cursive;
-                        &:hover {
-                            color: black !important;
-                            font-size: large;
-                        }
-
-                        
-                    }
-                }
-            }
-        }
-    }
- }
- .sectionHome {
-    margin-bottom: 50px;
-    div{
-        a{
-            img{
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
- }
-
- .footerHome {
-
-    .div__footer{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .div__footer1{
-            nav{
-                h4 {
-                text-align: start;
-                font-size: medium;
-                font-family:'Phudu', cursive;
-                margin: 10px;
-                }
-                ul {
-                    li{
-                        list-style: none;
-                        a{
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        
-        }
-         .div__footer2 {
-            nav{
-                 h4{
-                 text-align: start;
-                font-size: medium;
-                font-family:'Phudu', cursive;
-                margin: 10px;
-                
-                 } 
-                 ul{
-                    li{
-                        list-style: none;
-                        a{
-                            text-decoration: none;
-                        }
-                    }
-                 }
-             }
-       
-        
-         }
-     }
- }
- 
-
- }
-
-  }
 
 }
-
-
- }
